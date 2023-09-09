@@ -1,0 +1,73 @@
+/* Pokedex Card */
+.card {
+  display: grid;
+  grid-template-columns: 38% 62%;
+  gap: 10px;
+  background-color: #f3f4f7;
+  border: 1px solid #ccc;
+  height: 269px;
+  width: 100%;
+}
+.card:hover {
+  box-shadow: 3px 3px 3px #aeaeae;
+}
+.card:hover .descContainer .hoverButton p {
+  display: block;
+}
+.card .pokemonImg {
+  margin: 2.5vh 1.5vw;
+  height: 230px;
+  width: 12.5vw;
+}
+.card .happinessImg {
+  margin: 10px 1px;
+  height: 8vh;
+  width: 4vw;
+}
+.card .name {
+  font-family: "Gaegu";
+  font-size: 2.5rem;
+  margin: 2.5vh 0 0 0;
+}
+
+/* Pokedex Status */
+.statusContainer {
+  display: grid;
+  grid-template-columns: 15% 50%;
+  align-items: center;
+  gap: 10px;
+}
+.statusContainer p {
+  margin: 0;
+}
+
+.descContainer {
+  position: relative;
+}
+.descContainer .hoverButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 2vw;
+}
+.descContainer .hoverButton p {
+  display: none;
+  margin: 1vh 0 0 0;
+  font-size: 2rem;
+  color: #dc7777;
+  cursor: pointer;
+}
+
+.progressBar {
+  width: 15vw;
+  height: 30px;
+  background-color: #ccc;
+  margin: 5px 0;
+  position: relative;
+  border-radius: 20px;
+}
+.progress {
+  height: 100%;
+  background-color: #007bff; /* Blue color for progress */
+  border-radius: 20px;
+}
